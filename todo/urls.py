@@ -21,5 +21,5 @@ from .views import home
 urlpatterns = [
     path('', home,name='homepage'),
     path('admin/', admin.site.urls),
-    path('todo',include('todo_app.urls'))
+    path('todo/',include('todo_app.urls'))
 ]
